@@ -1,0 +1,18 @@
+{
+  "name": "TypeScript_Quickly_chapter9",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve",
+    "compileDeploy": "tsc && npm run deploy",
+    "deploy": "copyfiles -f src/browser/*.html src/browser/*.css dist"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.1",
+    "copyfiles": "^2.1.1",
+    "serve": "^10.1.2"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
